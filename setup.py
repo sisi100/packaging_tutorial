@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="example-hogehoge-package",
-    version="0.0.1", # https://www.python.org/dev/peps/pep-0440/
+    version="0.0.1",  # https://www.python.org/dev/peps/pep-0440/
     author="sisii",
     author_email="sisii00.swork@gmail.com",
     description="A small example package",
@@ -20,6 +20,7 @@ setuptools.setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
+    entry_points={"hoge": ["hoge = src.example:add_one"]},
     package_dir={"": "src"},
     packages=setuptools.find_packages(where="src"),
     python_requires=">=3.6",

@@ -1,2 +1,6 @@
-def add_one(number):
-    return number + 1
+def main():
+    print("hogehoge")
+
+
+if __name__ == "__main__":
+    main()
